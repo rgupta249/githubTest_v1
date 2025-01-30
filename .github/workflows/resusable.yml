@@ -17,7 +17,7 @@ jobs:
                 runs-on: ubuntu-latest
                 steps:
                         - name: Print a greeting
-                                run: echo "Hello ${{ inputs.who-to-greet }}"
+                        run: echo "Hello ${{ inputs.who-to-greet }}"
                         - name: Set time
-                                id: time
-                                run: echo "time=$(date)" >> $GITHUB_OUTPUT
+                        id: time
+                        run: echo "time=$(date)" >> $GITHUB_OUTPUT
