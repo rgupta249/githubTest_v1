@@ -16,8 +16,8 @@ jobs:
         reusable-job:
                 runs-on: ubuntu-latest
                 steps:
-                        - name: "Print a greeting"
+                        - name: Print a greeting
                                 run: echo "Hello ${{ inputs.who-to-greet }}"
-                        - name: "Set time"
+                        - name: Set time
                                 id: time
                                 run: echo "time=$(date)" >> $GITHUB_OUTPUT
